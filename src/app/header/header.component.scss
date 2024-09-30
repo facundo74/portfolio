@@ -1,0 +1,29 @@
+:host{
+    .header{
+        min-height: 50px;
+        background-color: #427AA1;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container{
+            display: flex;
+            justify-content: center;
+
+            .menu{
+                display: flex;
+                gap: 30px;
+
+                .items-menu{
+                    font-size: 14px;
+                }
+
+                .item-menu:hover{
+                    color: rgb(0, 1, 3);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
