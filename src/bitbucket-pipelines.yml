@@ -1,4 +1,4 @@
-image: node:20 # Utilizamos una imagen de Node.js para la pipeline
+image: node:20
 
 pipelines:
   branches:
@@ -10,7 +10,8 @@ pipelines:
           script:
             - npm install # Instala dependencias
             - npm run build -- --configuration=development # Genera la build de Angular
-            - scp -r ./dist/mi-app/ usuario@desarrollo.host.com:/ruta/del/servidor # Sube los archivos al servidor de desarrollo
+            - npm install -g netlify-cli # Instala el CLI de Netlify
+            - netlify deploy --prod --dir=./dist/portfolio-app/ --site=dcb7beab-8690-4dd4-b7a8-23a1ff947a68
     staging:
       - step:
           name: Build and Deploy to Staging
@@ -19,7 +20,8 @@ pipelines:
           script:
             - npm install
             - npm run build -- --configuration=staging
-            - scp -r ./dist/mi-app/ usuario@staging.host.com:/ruta/del/servidor # Sube los archivos al servidor de pruebas
+            - npm install -g netlify-cli
+            - netlify deploy --prod --dir=./dist/portfolio-app/ --site=dcb7beab-8690-4dd4-b7a8-23a1ff947a68
     production:
       - step:
           name: Build and Deploy to Production
@@ -28,4 +30,5 @@ pipelines:
           script:
             - npm install
             - npm run build -- --configuration=production
-            - scp -r ./dist/mi-app/ usuario@produccion.host.com:/ruta/del/servidor # Sube los archivos al servidor de producción
+            - npm install -g netlify-cli
+            - netlify deploy --prod --dir=./dist/portfolio-app/ --site=dcb7beab-8690-4dd4-b7a8-23a1ff947a68
