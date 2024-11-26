@@ -7,5 +7,5 @@ export const routes: Routes = [
   { path: 'experiencia', component: AppExperienciasComponent },
   { path: 'educacion', component: AppEducacionComponent },
   { path: 'habilidades', component: AppHabilidadesComponent },
-  { path: '', redirectTo: '/sobre-mi', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
 ];
