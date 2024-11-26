@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita scroll lateral si las secciones no están bien alineadas */
+    scroll-behavior: smooth; /* Añade un efecto de desplazamiento suave */
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column; /* Las secciones estarán apiladas verticalmente */
+    height: 100vh; /* Cada sección ocupará toda la ventana */
+    scroll-snap-type: y mandatory; /* Activa el efecto de scroll snapping en el eje Y */
+    overflow-y: scroll; /* Habilita el scroll solo en el eje Y */
+}
+
+.body > * {
+    flex-shrink: 0; /* Las secciones no se encogerán */
+    height: 100vh; /* Cada sección ocupa toda la altura de la ventana */
+    scroll-snap-align: start; /* El scroll se alinea al inicio de cada sección */
+}
+
+.educacion {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencias {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 100vh; /* El footer también ocupa toda la pantalla */
+    background-color: gray;
+}
