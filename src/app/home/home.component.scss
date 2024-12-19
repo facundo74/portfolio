@@ -1,3 +1,14 @@
+.header{
+    position: static;
+}
+
+.footer{
+    position: static;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,14 +20,14 @@ body, html {
 .body {
     display: flex;
     flex-direction: column; /* Las secciones estarán apiladas verticalmente */
-    height: 100vh; /* Cada sección ocupará toda la ventana */
+    height: calc(100% - 100px); /* Cada sección ocupará toda la ventana */
     scroll-snap-type: y mandatory; /* Activa el efecto de scroll snapping en el eje Y */
     overflow-y: scroll; /* Habilita el scroll solo en el eje Y */
 }
 
 .body > * {
     flex-shrink: 0; /* Las secciones no se encogerán */
-    height: 100vh; /* Cada sección ocupa toda la altura de la ventana */
+    height: 100%; /* Cada sección ocupa toda la altura de la ventana */
     scroll-snap-align: start; /* El scroll se alinea al inicio de cada sección */
 }
 

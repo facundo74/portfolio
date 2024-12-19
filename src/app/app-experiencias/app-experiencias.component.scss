@@ -1,0 +1,25 @@
+.contenedor-imagenes{
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+
+    .imagen{
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .agro{
+        background-image: url('/assets/campos/agro.jpg');
+    }
+    
+    .puerto{
+        background-image: url('/assets/campos/puerto.jpeg');
+    }
+    .granos{
+        background-image: url('/assets/campos/granos.jpeg');
+    }
+    .automotriz{
+        background-image: url('/assets/campos/automotriz.jpeg');
+    }
+}

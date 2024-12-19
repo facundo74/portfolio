@@ -4,6 +4,7 @@ import { ApiService } from '../shared/services/api-service.service';
 import { AppEducacionComponent } from "../app-educacion/app-educacion.component";
 import { AppExperienciasComponent } from "../app-experiencias/app-experiencias.component";
 import { AppHabilidadesComponent } from "../app-habilidades/app-habilidades.component";
+import moment from 'moment';
 
 @Component({
     selector: 'app-home',
@@ -13,11 +14,14 @@ import { AppHabilidadesComponent } from "../app-habilidades/app-habilidades.comp
     imports: [HeaderComponent, AppEducacionComponent, AppExperienciasComponent, AppHabilidadesComponent]
 })
 export class HomeComponent {
+    public year :any;
+
     constructor(
     ) {}
 
     ngOnInit(): void {
         console.log("enmtro init")
         //this.apiService.post();
+        this.year = moment().year();
 	}
 }
