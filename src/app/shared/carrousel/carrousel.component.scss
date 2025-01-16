@@ -1,0 +1,99 @@
+/******************************************************************************
+ *
+ *                              A T E N C I O N
+ *
+ * Es muy importante no modificar este archivo, por casos particulares de
+ * ningún tipo.
+ * Este componente es GENÉRICO, y ninguna particularidad de implementación se
+ * reflejará a aquí.
+ * 
+ * Ante cualquier neceidad de realizar algún tipo de modificación, por favor
+ * asegurarse que se trate EXPLÍCITAMENTE de un cambio GENÉRICO.
+ *
+ * NOTAR que los estilos que aquí se incluyen, son mínimos para brindarle al
+ * componente un aspecto básico y funcional.
+ * Por lo tanto cualquier modificación estética NO DEBERÁ REALIZARSE AQUÍ.
+ *
+ *****************************************************************************/
+
+:host {
+    width:100%;
+    position : relative;
+    display  : flex;
+    flex-direction: column;
+    overflow : hidden;
+
+    .hueco {
+
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        &.scroll {
+            overflow-x: scroll;
+            
+            &::-webkit-scrollbar {
+                display: none; /* for Chrome, Safari and Opera */
+            }
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .contenido {
+            display        : flex;
+            flex-direction : row;
+            transition     : 0.7s all ease-in-out;
+            height         : 100%;
+        }
+
+    }
+
+    .boton {
+        
+        display          : flex;
+        flex-direction   : row;
+        justify-content  : center;
+        align-items      : center;
+        position         : absolute;
+        bottom           : 0;
+        top              : calc(50% - 20px);
+        width            : 32px;
+        height           : 32px;
+        background-color : #00000099;
+        border-radius    : 100%;
+        margin           :24px;
+        color            :#ffffff;
+        cursor           : pointer;
+        font-size        : 12px;
+
+        &.anterior {
+            left: 20px;
+        }
+
+        &.posterior {
+            right: 20px;
+        }
+    }
+
+    .posiciones {
+        display         : flex;
+        flex-direction  : row;
+        justify-content : center;
+        gap             : 5px;
+        margin          : 5px;
+
+        .posicion {
+            width            : 5px;
+            height           : 5px;
+            display          : flex;
+            background-color : #999999;
+            border-radius    : 100%;
+            cursor           : pointer;
+
+            &.actual {
+                background-color : #ffffff;
+            }
+        }
+    }
+}

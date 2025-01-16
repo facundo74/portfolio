@@ -1,0 +1,21 @@
+<div #hueco class="hueco {{customClass}}" [class.scroll]="scroll">
+    <div 
+        #contenido 
+        class="contenido" 
+        [ngStyle]="{'margin-left': (offsetCarrousel) + 'px'}" 
+        (touchstart)="swipeService.touch($event)"
+        (touchmove)="swipeService.touch($event)"
+        (touchend)="swipeService.touch($event)"
+    >
+        <ng-content></ng-content>
+    </div>
+</div>
+<mat-icon class="boton control anterior {{customClass}}"  (click)="clickAnterior($event)"  *ngIf="puedeMostrarControles()">arrow_back_ios</mat-icon>
+<mat-icon class="boton control posterior {{customClass}}" (click)="clickPosterior($event)" *ngIf="puedeMostrarControles()">arrow_forward_ios</mat-icon>
+<div class="posiciones {{customClass}}" *ngIf="puedeMostrarPosicion()">
+    <div *ngFor="let p of posiciones; let i = index" 
+        class="posicion" 
+        (click)="clickPosicion($event, i)"
+        [class.actual]="i===posicion"
+    ></div>
+</div>

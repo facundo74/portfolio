@@ -31,16 +31,24 @@ body, html {
     scroll-snap-align: start; /* El scroll se alinea al inicio de cada sección */
 }
 
-.educacion {
-    background-color: lightblue;
+.sobre-mi{
+    background: linear-gradient(180deg, #4D4D4D 0%, #808080 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.educacion {
+    background: linear-gradient(180deg, #808080 0%, #6CA0DC 100%);
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 .experiencias {
-    background-color: lightcoral;
+    background: linear-gradient(180deg, #6CA0DC 0%, #87CEEB 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +56,7 @@ body, html {
 }
 
 .habilidades {
-    background-color: lightgreen;
+    background: linear-gradient(180deg, #87CEEB 0%, #001F54 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;

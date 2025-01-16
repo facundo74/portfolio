@@ -1,0 +1,35 @@
+:host {
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+  
+    .contenido {
+      display: flex;
+      animation: marquee 20s linear infinite; // Velocidad ajustada
+      will-change: transform;
+  
+      .tags {
+        width: 300px;
+        min-width: 300px;
+        height: 150px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+@keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+}
+  

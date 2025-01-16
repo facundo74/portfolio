@@ -3,6 +3,8 @@ import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { Injector, importProvidersFrom } from '@angular/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button'; // Importa el módulo de botones
+
 import { LOCALE_ID } from '@angular/core';
 
 import localePt from '@angular/common/locales/pt';
@@ -20,6 +22,7 @@ bootstrapApplication(AppComponent, {
             BrowserModule,
             HttpClientModule,
             MatProgressSpinnerModule,
+            MatButtonModule, // Agrega el módulo de botones aquí
         ]),
         { provide: LOCALE_ID, useValue: 'es-AR' },
         { provide: MAT_DATE_LOCALE, useValue: 'es-AR' },

@@ -10,6 +10,9 @@ import { HomeComponent } from "./home/home.component";
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+    title(title: any) {
+      throw new Error('Method not implemented.');
+    }
     isLeftSidebarCollapsed = signal<boolean>(false);
     screenWidth = 500;//signal<number>(window.innerWidth);
 

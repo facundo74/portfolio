@@ -7,5 +7,10 @@ export const routes: Routes = [
   { path: 'experiencia', component: AppExperienciasComponent },
   { path: 'educacion', component: AppEducacionComponent },
   { path: 'habilidades', component: AppHabilidadesComponent },
+  {
+    path: 'sobre-mi',
+    loadComponent: () =>
+      import('./sobre-mi/sobre-mi.component').then((m) => m.SobreMiComponent),
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

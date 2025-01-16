@@ -5,13 +5,14 @@ import { AppEducacionComponent } from "../app-educacion/app-educacion.component"
 import { AppExperienciasComponent } from "../app-experiencias/app-experiencias.component";
 import { AppHabilidadesComponent } from "../app-habilidades/app-habilidades.component";
 import moment from 'moment';
+import { SobreMiComponent } from "../sobre-mi/sobre-mi.component";
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [HeaderComponent, AppEducacionComponent, AppExperienciasComponent, AppHabilidadesComponent]
+    imports: [HeaderComponent, AppEducacionComponent, AppExperienciasComponent, AppHabilidadesComponent, SobreMiComponent]
 })
 export class HomeComponent {
     public year :any;

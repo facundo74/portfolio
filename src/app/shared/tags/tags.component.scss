@@ -1,22 +1,65 @@
-.tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+.educacion {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+  
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .tag {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 250px;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      }
+  
+      .tag-link {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .tag-logo {
+        width: 80px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+  
+      .tag-info {
+        text-align: center;
+      }
+  
+      .tag-name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+    }
 }
   
-.tag {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    border-radius: 20px;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #333;
-}
-  
-.tag img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}

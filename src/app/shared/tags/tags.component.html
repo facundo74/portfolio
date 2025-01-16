@@ -1,6 +1,9 @@
 <div class="tag">
-    <img [src]="urlImagen" [alt]="nombreTag" />
-    <span>{{ nombreTag }}</span>
-    <a >{{enlace}}</a>>
-
+    <a [href]="enlace" target="_blank" rel="noopener noreferrer" class="tag-link">
+      <img [src]="urlImagen" [alt]="nombreTag" class="tag-logo" />
+      <div class="tag-info">
+        <span class="tag-name">{{ nombreTag }}</span>
+      </div>
+    </a>
 </div>
+  
