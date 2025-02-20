@@ -15,9 +15,12 @@ export class AppHabilidadesComponent {
         { imagenUrl: 'assets/tools/angular.png', nombreTag: 'Angular' },
         { imagenUrl: 'assets/tools/html.png', nombreTag: 'HTML' },
         { imagenUrl: 'assets/tools/css.png', nombreTag: 'CSS' },
+        { imagenUrl: 'assets/tools/flutter.png', nombreTag: 'FLUTTER' },
+        { imagenUrl: 'assets/tools/git.png', nombreTag: 'GIT' },
         { imagenUrl: 'assets/tools/aws.png', nombreTag: 'AWS' },
         { imagenUrl: 'assets/tools/laravel.png', nombreTag: 'Laravel' },
-        { imagenUrl: 'assets/tools/css.png', nombreTag: 'CSS' }
+        { imagenUrl: 'assets/tools/dbeaver.png', nombreTag: 'DBeaver' },
+        { imagenUrl: 'assets/tools/postman.png', nombreTag: 'POSTMAN' }
     ];
 }
 

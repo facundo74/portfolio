@@ -49,6 +49,7 @@
     .carrousel-tags{
         display: flex;
         margin-top: 80px;
+        width: 100%;
         
         app-carrousel-tags{
             ::ng-deep {

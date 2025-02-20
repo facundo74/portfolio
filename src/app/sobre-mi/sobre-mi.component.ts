@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 
 @Component({
   selector: 'app-sobre-mi',
-  imports: [CommonModule],
+  imports: [SharedModule],
   templateUrl: './sobre-mi.component.html',
   styleUrl: './sobre-mi.component.scss'
 })
