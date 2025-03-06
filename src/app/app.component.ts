@@ -5,11 +5,14 @@ import { HomeComponent } from "./home/home.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LeftSidebarComponent, HomeComponent],
+  imports: [HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+    title(title: any) {
+      throw new Error('Method not implemented.');
+    }
     isLeftSidebarCollapsed = signal<boolean>(false);
     screenWidth = 500;//signal<number>(window.innerWidth);
 

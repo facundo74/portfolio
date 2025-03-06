@@ -1,0 +1,23 @@
+<section class="sobre-mi" [ngClass]="{'dark-mode': isDarkMode}">
+    <div class="sobre-mi-contenido">
+        <div class="texto">
+            <button mat-raised-button color="primary" (click)="cambiarColor()">Cambiar color</button>
+
+            <h1>¡Hola! Soy Facundo Finelli</h1>
+            <h2>Desarrollador Full Stack</h2>
+            <p>
+                Apasionado por crear soluciones innovadoras y eficientes en el mundo del desarrollo web. 
+                Tengo experiencia trabajando en <strong>Angular</strong>, <strong>Laravel</strong>, y otras tecnologías modernas. 
+                Mi enfoque está en construir aplicaciones escalables y atractivas, priorizando siempre la experiencia del usuario.
+            </p>
+            <p>Cuando no estoy programando, disfruto aprender nuevas tecnologías.</p>
+            <div class="datos-contacto">
+                <a href="mailto:facundo.finelli1@hotmail.com" class="btn-contacto">Escríbeme</a>
+                <a href="https://www.linkedin.com/in/facundo-f-192666118/" target="_blank" class="btn-contacto">LinkedIn</a>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="assets/foto-sobre-mi.jpg" alt="Foto de Facundo Finelli">
+        </div>
+    </div>
+</section>

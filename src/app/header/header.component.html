@@ -1,14 +1,19 @@
 <div class="header">
-    <div class="container">
-        <div class="menu">
-            <div class="item-menu">Home</div>
-            <div class="item-menu">Sobre mi</div>
-            <div class="item-menu">Contacto</div>
-            <div class="item-menu">
-                <button type="button" mat-icon-button color="primary">
-                    Descargar cv
-                </button>
-            </div>
+  <div class="container">
+      <div class="menu">
+        <div class="item-menu">
+            <a routerLink="/home" fragment="sobre-mi">Sobre mí</a>
         </div>
-    </div>
+        <div class="item-menu">
+            <a routerLink="/home" fragment="habilidades">Habilidades</a>
+        </div>
+        <div class="item-menu">
+            <a routerLink="/home" fragment="educacion">Educación</a>
+        </div>
+        <div class="item-menu">
+            <a routerLink="/home" fragment="experiencia">Experiencia</a>
+        </div>        
+      </div>
+  </div>
 </div>
+

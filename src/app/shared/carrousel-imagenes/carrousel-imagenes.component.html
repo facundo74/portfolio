@@ -1,0 +1,4 @@
+<app-carrousel #carrousel [mostrarPosicion]="mostrarPosicion" [mostrarControles]="mostrarControles" [autoScrollWaitTime]="autoScrollWaitTime">
+    <div class="imagen" *ngFor="let imagen of imagenes" [style.background-image]="'url(' + imagen.imagenUrl + ')'">
+    </div>
+</app-carrousel>

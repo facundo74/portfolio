@@ -1,0 +1,16 @@
+<div class="contenido">
+  <div
+    *ngFor="let tag of tags"
+    class="tags"
+    [style.backgroundImage]="'url(' + tag.imagenUrl + ')'"
+  >
+  </div>
+
+  <!-- Duplicación para evitar el retraso -->
+  <div
+    *ngFor="let tag of tags"
+    class="tags"
+    [style.backgroundImage]="'url(' + tag.imagenUrl + ')'"
+  >
+  </div>
+</div>
