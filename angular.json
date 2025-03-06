@@ -33,6 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
+            "baseHref": "/portfolio/",
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
